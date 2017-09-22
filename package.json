@@ -1,36 +1,18 @@
 {
-  "name": "sequelize",
+  "name": "@cond/sequelize",
   "description": "Multi dialect ORM for Node.JS",
   "version": "0.0.0-development",
   "author": "Sascha Depold <sascha@depold.com>",
   "contributors": [
-    {
-      "name": "Sascha Depold",
-      "email": "sascha@depold.com"
-    },
-    {
-      "name": "Jan Aagaard Meier",
-      "email": [
-        "janzeh@gmail.com",
-        "jmei@itu.dk"
-      ]
-    },
-    {
-      "name": "Daniel Durante",
-      "email": "me@danieldurante.com"
-    },
-    {
-      "name": "Mick Hansen",
-      "email": "mick.kasper.hansen@gmail.com"
-    },
-    {
-      "name": "Sushant Dhiman",
-      "email": "sushantdhiman@outlook.com"
-    }
+    "Sascha Depold <sascha@depold.com>",
+    "Jan Aagaard Meier <janzeh@gmail.com,jmei@itu.dk>",
+    "Daniel Durante <me@danieldurante.com>",
+    "Mick Hansen <mick.kasper.hansen@gmail.com>",
+    "Sushant Dhiman <sushantdhiman@outlook.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sequelize/sequelize.git"
+    "url": "git+https://github.com/sequelize/sequelize.git"
   },
   "bugs": {
     "url": "https://github.com/sequelize/sequelize/issues"
@@ -135,7 +117,7 @@
     "sscce-mysql": "cross-env DIALECT=mysql npm run sscce",
     "sscce-postgres": "cross-env DIALECT=postgres npm run sscce",
     "sscce-sqlite": "cross-env DIALECT=sqlite npm run sscce",
-    "semantic-release": "./node_modules/.bin/semantic-release pre && npm publish && ./node_modules/.bin/semantic-release post",
+    "semantic-release": "semantic-release pre && npm publish && ./node_modules/.bin/semantic-release post",
     "commitmsg": "validate-commit-msg"
   },
   "engines": {
@@ -146,5 +128,10 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "homepage": "https://github.com/sequelize/sequelize#readme",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
   }
 }
